@@ -1,0 +1,28 @@
+/*----------BannerImage Section----------------*/
+
+.banner-image {
+    height: 500px;
+}
+
+
+.bannerText{
+    
+}
+
+.banner-image h2{ 
+    font-size: 3rem;
+} 
+
+.banner-image p{
+    font-size: .9rem;
+   
+    
+}
+/*-----------------------Navbar Section-------------------------*/
+.menuIcon{
+    padding: 1rem;
+    border-radius: 3.125rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  
+}

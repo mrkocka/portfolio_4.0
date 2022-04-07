@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="./css/phone.css">
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eadc95f819.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/favicon_uj_16x16.png" sizes="4x6" type="image/png">
+    <title>Mr.Kocka.hu</title>
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <ul>   
+            <li><a href="#home">Főoldal</a></li>
+            <li><a href="#about">Rólam</a></li>
+            <li><a href="#portfolio">Portfolió</a></li>
+            <li><a href="#services">Szolgáltatások</a></li>
+            <li><a href="../blog/bloghome.html">Blog</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+ 
+    <main>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Mr. Kocka<br> Programozok, tehát vagyok! </h1>
+            <a href="#contact">
+            <button class="btn">
+                Küldj üzenetet!
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="pic">
+            <img src="./img/avatar_3.jpg" alt="Egy kép rólam">
+            <div id="intro">
+                <h2>Mr. Kocka</h2>
+                <p>Radics Péter vagyok, 2020 óta foglalkozom webfejlesztéssel. Eredeti végzettségemből – szociális munka – hoztam magammal a kliens oldali szemléletet. Minden munkámban igyekszem a megrendelő elvárásainak megfelelni. Elsősorban kisvállalkozók, cégek és magánszemélyek megkeresését várom. Bármi is legyen a feladat annyi biztos, hogy mindig legjobb tudásom szerint helytállok. Barátságos hozzáállásommal és áraimmal várom leendő ügyfeleimet.</p>
+                <p class="gitinfo">Portfolió oldalam elérhető a<a target="_blank" href="https://github.com/mrkocka/portfolio_3.1.0-a"k> Github-on</a>!</p>
+                <h2>Ismereteim</h2>
+                <div id="experience">
+                    <div class="exlogo">
+                        <img src="./img/html-5.svg" alt="html5logo">
+                        <p>HTML5</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/css3.svg" alt="css3logo">
+                        <p>CSS3</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/javascript.svg" alt="jslogo">
+                        <p>Javascript</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/wordpress.svg" alt="WPlogo">
+                        <p>WordPress</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/blender-3d.svg" alt="blenderlogo">
+                        <p>Blender</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/gimp.svg" alt="gimplogo">
+                        <p>Gimp</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/inkscape.svg" alt="inkslogo">
+                        <p>Inkscape</p>
+                    </div>
+
+                    <div class="exlogo">
+                        <img src="./img/Scribusicon.png" alt="scribuslogo">
+                        <p>Scribus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="headings">PORTFOLIÓ</h2>
+        <section class="selectButton">
+            <ul class="actions">
+                <li><span class="action btngallery" data-action="all">Összes</span></li>
+                <li><span class="action btngallery"data-action="webp">Weblapok</span></li>
+                <li><span class="action btngallery" data-action="webapp">Webapp</span></li>
+                <li><span class="action btngallery" data-action="grafic">Grafika</span></li>
+            </ul>
+        </section>
+        <section class="gallery">
+            <a href="https://www.levyndadesign.com/">
+                <div data-type="webp" class=" image image1 show">
+                        <div class="info">
+                            <h2>Levindadesign.com</h2>
+                            <p>Készült: 2021</p>
+                        </div>
+                </div>
+             </a>
+             <a href="http://www.probakocka.nhely.hu/">
+                <div data-type="webp" class=" image image2 show">
+                        <div class="info">
+                            <h2>RPG Portfólió</h2>
+                            <p>Készült: 2021</p>
+                        </div>
+                </div>
+            </a>
+            <a href="https://www.perfektbabakocsitisztitas.hu/">
+                <div data-type="webp" class=" image image3 show">
+                        <div class="info">
+                            <h2>perfektbabakocsitisztitas.hu</h2>
+                            <p>Készült: 2022</p>
+                        </div>
+                </div>
+            </a>
+            <a href="#">
+                <div data-type="webp" class=" image imageEmpty show">
+                    
+                        <div class="info ">
+                            <h2>Ez lehet a te oldalad!</h2>
+                            <p>Lorem, ipsum.</p>
+                        </div>
+                </div>
+            </a>
+            <a href="https://www.mrkocka.hu/project/WeddingAnniversary/">
+                <div data-type="webapp" class=" image imageApp1 show">
+                    
+                        <div class="info">
+                            <h2>Évfordulós Ajándék</h2>
+                            <p>Készült: 2021</p>
+                        </div>
+                    
+                </div>
+             </a>
+            <a href="https://www.mrkocka.hu/project/kari/">
+                <div data-type="webapp" class=" image imageApp2 show">
+                    
+                        <div class="info">
+                            <h2>Vírtuális Karácsonyfa</h2>
+                            <p>Készült: 2021</p>
+                        </div>
+                
+                </div>
+            </a>
+            <a href="#">
+                <div data-type="grafic" class=" image imagegrafic1 show ">
+                        <div class="info">
+                            <h2>Fantasy Térképek</h2>
+                            <p>Felhasznált: Inkarnate</p>
+                        </div>
+                </div>
+            </a>
+            <a href="">
+                <div data-type="grafic" class=" image imagegrafic2 show ">
+                    
+                        <div class="info">
+                            <h2>Logók</h2>
+                            <p>Felhasznált: canva.com</p>
+                        </div>
+                </div>
+            </a>
+        </section> 
+
+
+
+
+    </section>
+    
+    <section id="services">
+        <h2 class="headings">Szolgáltatások</h2>
+        <div class="row">
+           <div class="rowCard">
+            <i class="careIcon far fa-file-alt"></i>
+                <h3>Alap csomag</h3>
+                <p class="price">60 000 Ft-tól</p>
+                <div class="rowCardText">
+                    <p>Egyszerű kis oldal mely ideális portfolió oldalakhoz, kisebb online kampányok önálló oldalához. Az egyéni vállalkozók kedvence.</p>
+                </div>
+           </div>
+
+           <div class="rowCard">
+            <i class="careIcon far fa-file-alt"></i>
+                <h3>Közepes Csomag</h3>
+                <p class="price">80 000 Ft-tól</p>
+                <div class="rowCardText">
+                    <p>Ez a csomag a legjobb választás induló vállalkozásoknak, de több szerzős blogok számára is remek kiindulást jelenthet. Több oldalból álló komplex weblap, amelybe minden elfér.</p>
+                </div>
+           </div>
+
+           <div class="rowCard">
+            <i class="careIcon far fa-file-alt"></i>
+            <h3>Nagy Csomag</h3>
+            <p class="price" >100 000 Ft-tól</p>
+            <div class="rowCardText">
+                <p> Ez a csomag az igazán változatos, több tartalmat felvonultató weblapoknak lett kitalálva. Egyedi sokrétű, tökéletes kiindulási alap akár egy webshopnak is.</p>
+            </div>
+       </div>
+          
+            
+        </div>
+        <div class="attention">
+            <p>A részletekért vegye fel velem a kapcsolatot!</p>
+        </div>
+    </section>
+
+<section id="contact">
+    <h2 class="headings">Kapcsolat</h2>
+    <form action="https://formspree.io/f/xleaqqbj"  method="POST" class="form">
+        <input type="text" name="name" class="input" placeholder="Név">
+        <input type="email" name="email" class="input" placeholder="E-mail Cím">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Üzenet"></textarea>
+        <input  class="btn" type="submit" value="Küldés" id="send">
+    </form>
+</section>
+</main>
+<footer>
+    <section id="footerBox">
+        <div class="logoBox">
+            <img src="./img/mr.logo_3.png" alt="mrkockalogo">
+        </div>
+        <div class="socialBox">
+            <div class="socialIcon">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="https://github.com/mrkocka" target="_blank" class="fa fa-github"></a>
+            </div>
+            <p class="tel"><i class="fas fa-mobile-alt"></i> <a href="#"> 06 20 47 44 222</a></p>
+           
+            <p class="email"><i class="fas fa-envelope-open-text"></i> <a href="#">info@mrkocka.hu</a></p>
+        </div>
+        <div class="textBox">
+            <a href="./sutik.html">Sütik (cookie) kezelése</a>
+            <a href="./feltoltes.html">Adatvédelmi irányelvek</a>
+            <a href="./impresszum.html">Impresszum</a>
+            <a href="./kapcsolat.html">Kapcsolat</a>
+            <a href="./feltoltes.html">Köszönettel tartozom!</a>
+        </div>
+    </section>
+    <section id="cpoyArea">
+        <p>COPYRIGHT &copy2021 Mr.Kocka </p>
+    </section>
+    <section class="verzio">
+        <p>Verzio 3.1.0.</p>
+    </section>
+   
+
+    
+</footer>
+
+<div class="popup">
+    <div class="popuptext"><p>Kedves felhasználó! Tájékoztatlak, hogy a felhasználói élmény javítása érdekében oldalam sütiket (cookie) használ. Erről <a href="./sutik.html">itt</a> olvashatsz bővebben.</p></div>
+    <div id="close" class="popupbt"><i class="fas fa-times"></i></div>
+</div>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>

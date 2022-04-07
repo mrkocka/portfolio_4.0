@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #FCFAEE;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family:'Decorative';
+    src: url(../fonts/Kincseskamra\ -\ Díszes.otf);
+}
+
+@font-face {
+    font-family:'Imperial';
+    src: url(../fonts/Kincseskamra\ -\ Birodalmi.otf);
+}
+
+/*------------------------------Page-----------------------------------------*/
+
+/*----------Nav Section----------------*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo{
+    width: 10%;
+    text-align: center;
+}
+
+.logo img{
+    width: 9.375rem;
+    height: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-left: .5rem;
+}
+
+.navmenu{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+.navmenu a{
+    padding: 1.1rem;
+    font-family:'Decorative';
+    font-size: 2.1rem;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.61);
+    text-shadow: 2px 2px black;
+}
+
+.navmenu a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: whitesmoke ;
+    transition: .5s ease-in-out;
+}
+
+.navmenu a:hover{
+    color: white;
+    
+}
+
+.menuItem{
+    margin-right: 1rem;
+}
+
+.menuIcon{
+    display: none;
+}
+#HBmenu{
+    display: none;
+}
+ 
+/*----------BannerImage Section----------------*/
+
+.banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../IMG/kezdőkép.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    
+   
+}
+
+.bannerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.banner-image h2{
+    font-size: 10rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    font-family:'Imperial', cursive;
+    font-weight: 300;
+} 
+
+.banner-image p{
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    text-shadow: 1px 1px black;
+    font-family:'Decorative';
+}
+
+
+/*-----Section h2 style*/
+
+
+.sectionText h2{
+    font-family:'Imperial', cursive;
+    letter-spacing: 1.2rem;
+    font-size: 3rem;
+    padding-top: 6rem;
+    font-weight: 400;
+}
+
+.sectionText p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+}
+
+/*----------The Game Section----------------------*/
+#theGame{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#theGame h2{
+    margin-bottom: 6rem;
+}
+
+.textArea{
+    display: flex;
+    flex-direction: column;
+    
+}
+.textArea p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 170%;
+    
+}
+
+#theGame h3{
+    font-family:'Decorative';
+    font-size: 1.9rem;
+    font-weight: 100;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.listArea ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.listArea ul{
+    margin-bottom: 8rem;
+    margin-left: 4rem;
+}
+
+#theGame h4{
+    font-family:'Imperial', cursive;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 2.2rem;
+    letter-spacing: 1.2rem;
+}
+
+.deria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.deria p{
+    text-align: justify;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+    line-height: 200%;
+    font-weight: 400;
+}
+.deria :last-child{
+    margin-top: 3rem;
+}
+
+
+/*----------News & Update Section---------------*/
+
+#newsNupdate h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#newsNupdate{
+    height: auto;
+   /*  text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;   
+}
+
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    max-width: 1240px; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.card-content{
+    display: flex; /*Ha végeztél ez a végén flex lesz*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.card{
+    position: relative;
+    background: #fff;
+    max-width: 325px;
+    width: 325px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card h4{
+    padding: .1rem 0 .8rem 0;
+}
+
+.card-image{
+    max-height: 200px;
+}
+
+.card-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card-info{
+    position: relative;
+    padding: 10px 20px 20px;
+}
+
+.card-info h3{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.card-info p{
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.pagination{
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+.pagination li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 45px;
+}
+
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 /10%);
+}
+.page-item{
+    border: 1px black;
+}
+
+.previous-page, .next-page{
+    background-color: white;
+    width: 80px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.previous-page:hover{
+    transform: translateX(-5px);
+}
+
+.next-page:hover{
+    transform: translateX(5px);
+}
+
+.current-page, .dots{
+    background-color: whitesmoke;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgba(128, 128, 128, 0.308);
+    
+}
+
+.disable{
+    background-color: whitesmoke;
+}
+
+
+
+/*----------Download Section-------------------*/
+#download{
+    height: 800px;
+    text-align: center;
+}
+
+
+
+/*----------Contact Section-------------------*/
+#contact{
+    height: 700px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#contact h2{
+    padding-top: 0;
+}
+
+
+/*----------Footer Section-------------------*/
+footer{
+    text-align: center;
+    color: whitesmoke;
+    height: 150px;
+    background-color: black;
+}
+
+footer h2{
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    font-family:'Decorative';
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: .5rem;
+    font-family:'Decorative';
+}

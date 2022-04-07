@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:928px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:660px)" href="./css/phoneA.css">
+    <link rel="stylesheet" media="screen and (max-width:562px)" href="./css/phoneB.css">
+    <link rel="stylesheet" media="screen and (max-width:330px)" href="./css/Iphone.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/eadc95f819.js" crossorigin="anonymous"></script>
+    <title>KincsesKamra</title>
+</head>
+<body>
+    
+     <!-- Navbar  -->
+    <nav id="nav">
+       <div class="logo">
+         <a href="#banner"><img src="./IMG/Logo3_nav.png" alt="KincsesKamraLogo"></a>
+           
+       </div>
+       <div class="navmenu">
+           <span class="menuItem" id="menu">
+               <a  href="#theGame">A játékról</a>
+               <a  href="#newsNupdate">Hírek</a>
+               <a  href="#download">Letöltések</a>
+               <a  href="#contact">Kapcsolat</a>
+            </span>
+            <span class="menuIcon" id="HBIcon">
+                <i id="HButton" class="fas fa-bars"></i>
+               <!--  <i id="XButton" class="fas fa-times"></i> -->
+            </span>
+       </div>
+       <div id="HBmenu">
+        <i id="XButton" class="fas fa-times"></i>
+             <span class="twomenu">
+              <a onclick="finish()" href="#theGame">A játékról</a>
+              <a onclick="finish()" href="#newsNupdate">Hírek</a>
+              <a onclick="finish()" href="#download">Letöltések</a>
+              <a onclick="finish()" href="#contact">Kapcsolat</a>
+             </span>
+             
+       </div>
+    </nav>
+
+
+       <!-- Banner Image  -->
+    <section class="banner-image" id="banner">
+
+      <div class="bannerText">
+        <h2>Kincses Kamra</h2>
+        <p>Valam szlogen, vagy idézet helye? :)</p>
+      </div>
+        
+    </section>
+
+<main>
+  <section class="sectionText" id="theGame">
+    <h2>A játékról</h2>
+    <div class="textArea">
+      <p>A Kincseskamra a Dungeons & Dragons nevű szerepjáték egy változata, vagy ha így jobban tetszik: a klónja. <br> 
+        A játék szabályrendszerének nagy része a harmadik és az ötödik kiadásból származik. 
+      </p>
+      <p>Felmenőivel ellentétben a Kincseskamra egy kiadótól független, házi fejlesztésű szabályrendszer, <br> amit folyamatosan próbálunk javítani. </p>
+      <p>Habár a szabályok sok helyen egyedi megnevezéseket használnak, ami egy bizonyos világhoz, <br> <strong>Dérához</strong> köti a játékot, az alapok bármilyen elképzelt világra átültethetőek.</p>
+    </div>
+    <div class="listArea">
+      <h3>Főbb eltérések az eredeti rendszerekhez képest:</h3>
+      <ul>
+        <li>Az induló karakterek hat tulajdonsága 1 és 7 között lehet.
+          A tulajdonságok nem használnak módosítókat, csak a tulajdonság értékeket.</li>
+        <li>A kalandozók életpontjai nem változnak a szintlépésekkel, az állóképesség értékükből származó 
+          ún. életpont szorzó növeli vagy csökkenti a fajból származó alap életpontot.</li>
+        <li>A varázslatokat manapontokból lehet létrehozni.</li>
+        <li>A mentődobások eltűntek. Helyettük már csak a tulajdonság próbák vannak.</li>
+        <li>A karaktereknek az életpontjaikon túl a bátorságukat is meg kell őrizniük a játék során, ha sokáig akarnak kalandozni.</li>
+        <li>A szabályok metrikus rendszerre lettek átültetve.</li>
+      </ul>
+    </div>
+    <div class="deria">
+      <h4>Déria Világa</h4>
+      <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum distinctio natus quod esse! Libero non quidem soluta aspernatur! Soluta, corrupti cum dolores cumque officiis error impedit a dicta labore?
+        Neque maiores nostrum magni, rerum optio molestias quia dignissimos corrupti, nam tempore ut eum praesentium similique. Id recusandae tempora necessitatibus facere dolor aspernatur cum sequi vitae corporis reiciendis, debitis dicta?
+        Nobis recusandae ad molestiae est, animi sint? Delectus dignissimos, officia minima blanditiis quam molestias harum, non assumenda eaque sed magni, illum sint natus. Totam eos laborum consequuntur exercitationem, quibusdam natus!
+        
+      </p>
+        <img src="#" alt="egyképhelye">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum distinctio natus quod esse! Libero non quidem soluta aspernatur! Soluta, corrupti cum dolores cumque officiis error impedit a dicta labore?
+          Neque maiores nostrum magni, rerum optio molestias quia dignissimos corrupti, nam tempore ut eum praesentium similique. Id recusandae tempora necessitatibus facere dolor aspernatur cum sequi vitae corporis reiciendis, debitis dicta?
+          Nobis recusandae ad molestiae est, animi sint? Delectus dignissimos, officia minima blanditiis quam molestias harum, non assumenda eaque sed magni, illum sint natus. Totam eos laborum consequuntur exercitationem, quibusdam natus!
+    
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionText" id="newsNupdate">
+      <h2>Hírek és Frissitések</h2>
+    <section class="container">
+      <div class="card-content" style="display: none;">
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 01</h3>
+                  <h4>2022.01.23</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 02</h3>
+                  <h4>2022.01.24</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 03</h3>
+                  <h4>2022.01.25</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 04</h3>
+                  <h4>2022.01.26</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 05</h3>
+                  <h4>2022.01.27</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 06</h3>
+                  <h4>2022.01.28</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 07</h3>
+                  <h4>2022.01.29</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 08</h3>
+                  <h4>2022.01.30</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 09</h3>
+                  <h4>2022.01.31</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 10</h3>
+                  <h4>2022.02.01</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 11</h3>
+                  <h4>2022.02.02</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 12</h3>
+                  <h4>2022.02.02</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 01</h3>
+                  <h4>2022.01.23</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <div class="card-image"><img src="./IMG/test3.jpg" alt="ez egyterkep"></div>
+              <div class="card-info">
+                  <h3>Card 01</h3>
+                  <h4>2022.01.23</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nobis, ab ratione inventore autem, officiis repellat praesentium et architecto eos quam enim?</p>
+              </div>
+             </a>
+          </div>
+   
+      </div> 
+      <div class="pagination">
+         <!--  <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+          <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+          <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+          <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+          <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+          <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+          <li class="page-item next-page"><a class="page-link" href="#">Next</a></li> -->
+      </div>
+    </section>
+
+  </section>
+
+
+
+  <section class="sectionText" id="download">
+    <h2>Letöltések</h2>
+  </section> 
+
+
+  <section class="sectionText" id="contact">
+    <h2>Kapcsolat</h2>
+  </section>
+
+</main>
+
+<footer>
+  <h2>Lábléc</h2>
+  <a href="https://www.mrkocka.hu/">Mr. Kocka</a>
+</footer>
+
+
+  
+
+
+    
+<script src="./js/main.js"></script>
+<script src="./js/NewsUpdateSection.js"></script>
+
+</body>
+</html>

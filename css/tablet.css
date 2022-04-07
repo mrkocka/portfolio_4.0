@@ -1,0 +1,156 @@
+/*---------------------------------------------------------Home_page--------------------------------------------------------------------------------------*/
+
+
+/*Navbar*/
+
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+
+
+
+
+/*Headings*/
+.headings{
+    font-size: 2.8rem;
+}
+
+
+/*About*/
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro{
+    text-align:left;
+    
+    
+
+}
+
+#intro h2, h3 {
+    text-align: center;
+    
+}
+#intro h3{
+    padding: 10px;
+}
+#intro p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Portfolió Gallery*/
+
+.gallery{
+    width: 100%;
+}
+
+.selectButton{
+    /* background-color: rgba(128, 128, 128, 0.411);  */
+    width: 100%;
+}
+
+.selectButton .btngallery{
+    font-size: 1.5rem;
+}
+
+
+
+/*Contact*/
+.input{
+    width: 70%;
+}
+#msg{
+    width:60%;
+}
+#send{
+    width: 20%;
+}
+
+
+/*   Footer   */
+
+.socialIcon{
+    width: 100%;
+}
+
+.socialIcon .fa{
+    font-size: 1.5rem;
+}
+.tel a{
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+.email a{
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.textBox{
+    padding-top: 2rem;
+}
+
+
+
+/*------- Alapcsomag, Közepes csomag, Nagy csomag, Extra csomag------------------------ */
+#textSection{
+    width: 90%;
+}
+
+/*------------------Sütik (cookie) kezelése------------------------------*/
+.pageTitle{
+    width: 90%;
+    
+}
+
+.Paragraph{
+    width: 90%;
+    
+}
+
+/*------------------Popup---------------------------------------------------------*/
+.popup{
+    width: 90%;
+    left: 5%;
+}
+
+.popup p{
+font-size: .9rem;
+} 
+
+
+/*------------------Köszönettel Tartozom---------------------------------------------------------*/
+
+/*------------------Köszönettel Tartozom---------------------------------------------------------*/
+
+.thankyou{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.thankyou .text, .thankyou .thankyouImg{
+    width: 100%;
+}
+
+.thankyou .text{
+    padding: 2rem;
+}
+
+#change1{
+    order: 1;
+}
+
+#change2{
+    order: 2;
+}
+
+#pk{
+    width: 100%;
+    clip-path: none;
+}

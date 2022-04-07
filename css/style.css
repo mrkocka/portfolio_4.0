@@ -1,0 +1,960 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    /* text-decoration: none; */
+}
+    
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*---------------------------------------------------------Home_page--------------------------------------------------------------------------------------*/
+
+
+body{
+    background-color: black;
+}
+
+
+
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #eeeeff;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #7f7caf83;
+    color: #1d1e18;
+    box-shadow: 0 0 10px #7f7caf83;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.377);
+    height: 830px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffce ;
+    z-index: 1;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/klavi_bg_optimized.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+   
+   
+}
+.headings{
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin:40px 0px;
+   
+}
+
+
+.btn{
+    padding: 10px 35px;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.219);
+    border: 1px solid white;
+    color: #eeeeff;
+    outline: none;
+    transition: .6s ease;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    
+}
+
+/* About Section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #ffffffce;
+}
+.gitinfo{
+    text-align: center;
+}
+.gitinfo a{
+    font-family:'Open Sans Condensed', sans-serif;
+    color: #ffffffce;
+    font-weight: 600;
+}
+.gitinfo a:hover{
+    color: red;
+}
+
+#pic{
+    display: flex;
+    
+}
+
+#pic img{
+    margin-top: 3rem;
+    width: 22.875rem;
+    height: 25.938rem;
+    border-radius: 1.25rem;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    
+}
+#intro h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+#intro p {
+    font-size: 2.2rem;
+    padding: 2%;
+    line-height: 150%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+#intro h3{
+
+    font-size: 1.3rem;
+    padding-top: .2rem;
+    padding-bottom: 1.3rem;
+}
+
+#experience {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.exlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    font-family:'Open Sans Condensed', sans-serif;
+    
+}   
+
+#experience img{
+    width: 5rem;
+    height: 5rem;
+    
+    
+}
+
+
+
+/*Porfolio Section */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(128, 128, 128, 0.158);
+    color: #ffffffce;
+    align-items: center;
+    padding: 20px;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+
+#portfolio h2{
+    text-shadow: 1px 1px 2px black;
+}
+
+.gallery{
+    width: 80%;
+    min-height: 40rem;
+    margin: 2rem auto 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    
+   
+}
+
+.gallery a {
+    color: white;
+    text-decoration: none;
+}
+
+.selectButton{
+    margin: 2rem;
+    width: 60%;
+    margin: 2rem auto 2rem auto;
+}
+
+.selectButton .actions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selectButton ul {
+    list-style: none;
+}
+.selectButton li{
+    margin: 1rem 1rem 1rem 1rem;
+    
+}
+
+
+.selectButton .btngallery{
+    padding: 10px 35px;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.219);
+    border: 1px solid white;
+    color: #eeeeff;
+    outline: none;
+    transition: .6s ease;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.8rem; 
+    border-radius: 20px;
+}
+
+.btngallery:hover{
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+
+.image{
+    width: 25rem;
+    height: 15rem;
+    margin: 1rem;
+    background-color: burlywood; 
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end; 
+    cursor: pointer; 
+    border-radius:20px;
+ 
+}
+.image a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.image1{
+    background-image: url(../img/portfolio/levyndadesign.png);
+    background-size: cover;
+    background-position:center;
+}
+
+.image2{
+    background-image: url(../img/portfolio/Angnon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image3{
+    background-image: url(../img/portfolio/oldalkep2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imageEmpty{
+    background-image: url(../img/portfolio/Empty.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.imageApp1{
+    background-image: url(../img/portfolio/Wa.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.imageApp2{
+    background-image: url(../img/portfolio/kari.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagegrafic1{
+    background-image: url(../img/portfolio/fantasy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagegrafic2{
+    background-image: url(../img/portfolio/Logok.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.info{
+    background-color: rgba(128, 128, 128, 0.664); 
+    width: 25rem;
+    transition:all 500ms linear;
+    opacity: 0;
+    border-radius:0 0 1.25rem 1.25rem;
+    text-align: center;
+
+}
+.info h2{
+    margin-top: .5rem;
+}
+
+.image:hover .info{
+    opacity: 1;
+}
+
+
+
+.show{
+    transform:scale(1);
+    /* opacity: 1; */
+    display: flex;
+}
+
+
+
+/* Services Section */
+
+.services, h2{
+color: #ffffffce;
+padding-top: 20px;
+text-shadow: 1px 1px 2px black;
+}
+
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(../img/black-bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+    
+    
+}
+.row{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   /*  outline: 2px solid whitesmoke; */
+}
+.row a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.rowCard{
+    width: 22rem;
+    height: 28rem;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(147,22,33)50%, #eeeeff 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    margin: 3.5rem 2rem 0 2rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+} 
+
+.rowCard h3{
+    font-size: 4rem;
+ 
+}
+
+.rowCard .price{
+    color: red;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
+    font-weight:700;
+}
+
+
+.rowCard:hover{
+    background-position: left bottom;
+    color: white;
+    border:none;
+    box-shadow: 0 0 20px rgb(147,22,33);
+}
+
+.rowCardText{
+    width: 97%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
+    
+}
+
+
+.attention{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 8rem;
+}
+
+.box .headings{
+    font-size: 4rem;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.careIcon{
+    font-size: 5.5rem;
+    margin-bottom: 2%;
+}
+
+
+.attention p{
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+/*------------------------------------------Contact Section------------------------------------*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ /*    box-sizing: border-box; */
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #ffffffce;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.form{
+    background: url(../img/massageBg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+    padding-top: 40px;
+    padding-bottom:40px;
+    width: 80%;
+    border-radius: 20px;
+   
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.3rem;
+    background-color: rgba(245, 245, 245, 0.856);
+
+}
+
+#msg{
+    width: 40%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.3rem;
+    background-color: rgba(245, 245, 245, 0.856);
+}
+
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+  
+}
+
+
+/* Footer Section */
+
+
+footer{
+    background-color:rgba(245, 245, 245, 0.158);
+    color: whitesmoke;
+}
+footer a {
+    text-decoration: none;
+}
+#footerBox{
+    display: flex;
+    justify-content: space-between;
+    height:auto;
+
+}
+/*---------------------Logo-----------------------------------*/
+.logoBox{
+    height: 168px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-left:4vh ;
+    
+}
+
+.logoBox img{
+    width: 10vh;
+    margin-top: 15px;
+}
+
+/*-------------------Social Icon@tell,email--------------------*/
+.socialBox{
+    height: 168px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.socialIcon{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialIcon .fa{
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.socialIcon .fa:hover{
+    color: red;
+}
+.tel a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+.tel a:hover{
+    color: red;
+}
+.tel .fas{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.email a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.email a:hover{
+    color: red;
+}
+.email .fas{
+    font-size: 1.5rem;
+    margin-right: .3rem;
+}
+
+
+
+/*----------------------TextBox---------------------------------*/
+.textBox{
+    height: 168px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 6rem;
+
+}
+.textBox a{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding-bottom: .8rem;
+}
+
+.textBox a:hover{
+    color: red;
+}
+
+
+
+/*---------------------Copy------------------------------------*/
+#cpoyArea{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    letter-spacing: .7rem;
+}
+/*------------------------Verzio-------------------------------*/
+.verzio{
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: .1rem;
+}
+
+
+
+
+/*------- Alapcsomag, Közepes csomag, Nagy csomag, Sütik, Impresszum------------------------ */
+
+
+#pageHeader{
+    height: 830px;
+    width: 100%;
+    background-image: url(../img/klavi_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#textSection{
+    height:auto;
+    width: 90%;
+    margin-top: -700px;
+    background-color:rgba(128, 128, 128, 0.911);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    
+    
+    
+}
+.pageTitle{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.pageTitle h3{
+    font-size: 3rem;
+    font-family: 'Amatic SC', cursive;
+    padding: .5rem;
+
+}
+
+#cardMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pageTitle p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+
+
+/*------------------Sütik (cookie) kezelése------------------------------*/
+
+.pageTitle{
+    text-shadow: 1px 1px 2px black;
+    width: 80%;
+}
+
+.Paragraph{
+   /*  outline: solid 1px whitesmoke; */
+    width: 80%;
+    height: auto;
+    padding: 1.4rem;;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-family:'Open Sans Condensed', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+.Paragraph p{
+    font-family:'Open Sans Condensed', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+.Paragraph a{
+    color: whitesmoke;
+}
+
+.Paragraph a:hover{
+    color: red;
+}
+
+.Paragraph ul li{
+    font-family:'Open Sans Condensed', sans-serif;
+}
+.question{
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.cookies{
+    margin-top: 1rem;
+}
+
+.Paragraph ul{
+    font-size: 1.4rem;
+    padding: 1.3rem;
+    margin-top: .1rem;
+}
+
+
+/*------------------Köszönettel Tartozom---------------------------------------------------------*/
+
+.thankyou{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.thankyou .text{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding-left:10%;
+}
+
+.thankyou .text h4{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.thankyou .text p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.thankyouFooter{
+  display: flex;
+  align-items: center;
+}
+
+
+.thankyou .thankyouImg{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+.thankyouFooter img{
+    width: 100px;
+}
+
+
+.thankyoubtn{
+    margin: 2rem 0 1rem 0;
+    width: 8rem;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+
+.thankyoubtn a{
+   text-decoration: none;
+   color: black; 
+   font-size: 1.5rem;
+}
+
+
+#thimg{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+   
+}
+
+
+/*-------------------adatvedelem-------------------*/
+.concepts{
+    margin-top: 1rem;
+    
+}
+
+
+/*-------------------table-------------------*/
+table.customTable {
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.8rem;
+  }
+
+  
+  table.customTable td, table.customTable th {
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-style: solid;
+    padding: 10px;
+  }
+
+  table.customTable td{
+      text-align: center;
+  }
+  
+
+
+
+/*------------------Popup---------------------------------------------------------*/
+
+.popup{
+    background-color: rgba(192, 192, 192, 0.774);
+    width: 90%;
+    height: 55px;
+    position: sticky;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    z-index: 2;
+    display: none;
+   
+}
+
+.popup p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -.3rem;
+    letter-spacing: .1rem;
+    position: relative;
+    
+}
+.popup a {
+    
+    font-family:'Open Sans Condensed', sans-serif;
+    color: black;
+
+    
+}
+
+.popuptext{
+/* outline: 1px solid whitesmoke;  */
+width: 98%; 
+display: flex;
+justify-content: center;
+}
+#close{
+  /* outline: 1px solid whitesmoke;  */
+    width: 2%;
+    text-align: end;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#close .fas{
+    margin-right: .3rem;
+} 
+
+
+
+/*-------------------------------------------------------Blog Főoldal----------------------------------------------------------------------------------*/
+
+
+/*-----------csempe---------------------------------------------------------------------------*/
+#tiles{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: rgba(0, 255, 255, 0.082);
+    width: 80%;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+}
+
+#tiles span{
+    width: 15rem;
+    height: 8rem;
+    background-color: coral;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+#tiles a{
+    text-decoration: none;
+    color: white;
+}
+
+#tiles span:hover{
+        outline: 2px solid whitesmoke;
+        cursor: pointer;
+}
+
+/*------------------------Cikek---------------------------------------------------------------*/
+

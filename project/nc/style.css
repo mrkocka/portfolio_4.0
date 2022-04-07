@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px black;
+}
+/*--------------------HeaderSection------------------------------------------*/
+header{
+    max-width: 33.125rem;
+    height: 22.125rem;
+    background-image: url(./img/klavi_bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.language{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.language img{
+    width: 2.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.name{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.name h1{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    font-family: 'Amatic SC', cursive;
+}
+.name h3{
+    font-size: 3.2rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+/*--------------------MainSection------------------------------------------*/
+
+main{
+    max-width: 33.125rem;
+    height: auto;
+    background-image: url(./img/massageBg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.avatarimg{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+    
+}
+
+.my{
+    border-radius: 25rem ;
+    width: 80%;
+    height: auto;
+    max-width: 340px;
+    margin-top: -7rem;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button img{
+    width: 5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.textArea{
+    color: whitesmoke;
+    height: auto;
+    
+}
+.textArea h2{
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+.textArea h2, h4{
+    text-align: center;
+    
+}
+.textArea h4{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+
+.textArea h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:'Open Sans Condensed', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.jelszo{
+    font-size: 1.8rem;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+.textArea span{
+    text-decoration: underline;
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+}
+.textArea p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    font-family:'Open Sans Condensed', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.footer{
+
+    height: auto;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer a {
+    margin-bottom: .2rem;
+    margin-top: -1.2rem;
+    color: whitesmoke;
+    font-family:'Open Sans Condensed', sans-serif;
+    
+}

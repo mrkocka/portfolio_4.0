@@ -1,0 +1,43 @@
+
+
+
+/*----------BannerImage Section----------------*/
+
+.banner-image {
+    height: 500px;
+}
+
+
+
+
+.banner-image h2{ 
+    font-size: 3.2rem;
+   
+} 
+
+.banner-image p{
+    font-size: 1rem;
+   
+    
+}
+
+
+/*-----Section h2 style*/
+
+.sectionText{
+    font-size: 1.3rem;
+    
+}
+
+#theGame h3 {
+    font-size: 1.5rem;
+    
+}
+
+.listArea ul {
+    margin-left: 1.5rem;
+}
+
+.deria p {
+    font-size: 1.2rem;
+}

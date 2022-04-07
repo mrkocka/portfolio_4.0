@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.8rem;
+    letter-spacing: 1.2rem;
+   
+}
+h2{
+   font-size: 2rem; 
+}
+
+
+/*------------------------------------Header------------------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    height: 6rem;
+    padding: 1rem;
+  
+}
+header div{
+    display: flex;
+    justify-content: center;
+
+}
+.h1Text{
+  
+    width:80%;
+}
+.linkText{
+    width: 20%;
+}
+
+header p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    margin-top: 1rem;
+}
+
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/*------------------------------Main--------------------------------------------*/
+
+main{
+    height: auto;
+    color: whitesmoke; 
+    background-image: url(../img/klavi_bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+main a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.card:hover{
+    box-shadow: rgba(245, 245, 245, 0.733) 0px 12px 28px 0px, rgba(245, 245, 245, 0.733) 0px 2px 4px 0px, rgba(245, 245, 245, 0.733) 0px 0px 0px 1px inset;
+}
+
+
+.card {
+    height: 26rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    background-color: #757576d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ 
+}
+.card p{
+    max-width: 19rem;
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .2rem;
+    text-align:left;
+}
+.card img{
+    width: 15rem;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+
+/*------------------------------Footer--------------------------------------------*/
+
+
+footer{
+    background-color:#262626;
+    color: whitesmoke;
+    display: flex;
+    height: 277px;
+    font-size: 1.4rem;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.logoBox{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: .2rem;
+}
+
+.logoBox img{
+    width: 10vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.socNtextBox{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socIcon{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socIcon .fa{
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.socIcon .fa:hover{
+    color: red;
+}
+
+.tel a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+.tel a:hover{
+    color: red;
+}
+.tel .fas{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.email a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.email a:hover{
+    color: red;
+}
+
+.email .fas{
+    font-size: 1.5rem;
+    margin-right: .3rem;
+}
+
+.linkBox{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.linkBox p{
+   margin-top: 6rem;
+   letter-spacing: .8rem;
+}
+.linkBox a:hover{
+    color: red;
+}

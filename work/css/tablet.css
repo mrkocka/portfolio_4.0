@@ -1,0 +1,56 @@
+h1{
+    font-size: 1.5rem;
+   letter-spacing: 1.1rem;
+}
+
+header p{
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    margin-top: 1rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    font-size: 1.8rem;
+}
+
+.logoBox{
+    width: 100%;
+    letter-spacing: .3rem;
+}
+
+.socNtextBox{
+    width: 100%;
+}
+
+.socIcon{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.socIcon .fa{
+    font-size: 2.9rem;
+}
+
+.email  a {
+    font-size: 2rem;
+}
+.tel a {
+    font-size: 2rem;
+}
+
+
+.linkBox{
+    width: 100%;
+}
+
+.linkBox p{
+    margin-top: 2rem;
+    letter-spacing: .8rem;
+    margin-bottom: 1rem;
+ }
