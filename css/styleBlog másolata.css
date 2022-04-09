@@ -11,8 +11,6 @@ html{
 body{
     background-color: black;
     color: whitesmoke;
-   /*  display: flex;
-    flex-direction: column; */
    
 }
 
@@ -246,22 +244,21 @@ body{
     }
   }
 
-/*-----------csempe---------------------------------------------------------------------------*/
+/*---------------------------------------------------------tiles---------------------------------------------------------------------------*/
 #tiles{
     color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-   /*  background-color: rgba(0, 255, 255, 0.082); */
     width: 80%;
     margin: 4rem auto 4rem auto;
     padding: 1rem;
 }
 
 #tiles span{
-    width: 15rem;
-    height: 8rem;
+    width: 20rem;
+    height: 13rem;
     background-color: coral;
     text-align: center;
     border-radius: 20px;
@@ -269,6 +266,29 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
+    letter-spacing: .4rem;
+}
+
+
+.movie{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/Vt.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/cikkek.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/gallery.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #tiles a{
@@ -278,103 +298,122 @@ body{
 }
 
 #tiles span:hover{
-        outline: 2px solid whitesmoke;
+        outline: 4px solid whitesmoke;
         cursor: pointer;
 }
 
 /*----------------------------------Articles-----------------------------------*/
 
 #articles{
-  color: black;
-  
+  height: auto;
+  margin-bottom: 10rem;
+  padding: 2rem 0 2rem 0;
+
 }
 
 .container {
   width: 90%;
+  height: auto;
   margin: 50px auto 0 auto;
-  margin-bottom: 20rem;
-}
-.heading {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 50px;
-  
-}
-
-.row {
+  margin-bottom: 2rem;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.row a{
-  text-decoration: none;
-  color: black;
-}
-
-
-
-.card {
-  width: 20%;
-  background: #fff;
-  border: 1px solid #ccc;
-  margin: 2rem;
-  transition: 0.3s;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.card-header {
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  padding: 50px 10px;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
-  color: #fff;
-  border-radius: 20px;
+  
  
 }
 
-.card-body {
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 18px;
-  font-family:'Open Sans Condensed', sans-serif;
-  
-}
-
-.card-body .btn {
-  display: block;
-  background-color: black;
-  padding: 10px 35px;
-  width: 8rem;
-  color: #eeeeff;
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.2rem; 
-  border-radius: 20px;
-  margin-top: 30px;
-}
-
-.card-body .btn:hover {
-  background-color: rgba(0, 0, 0, 0.473);
-  color: black;
-}
-
-.card-body a{
+.container a {
   text-decoration: none;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+.container .card{
+  width: 20rem;
+  height: 25rem;
+  background-color: rgba(255, 255, 255, 0.842);
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
 }
 
-@media screen and (max-width: 1000px) {
+.card:hover{
+  outline: 4px solid whitesmoke;
+}
+
+.container .bannerCard{
+  width: 100%;
+  height: 40%;
+  border-radius: 20px 20px 0 0 ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/felltoltesAlatt.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card h3{
+  margin: .5rem 0 .5rem 0;
+  font-family: 'Amatic SC', cursive;
+}
+.date{
+  width: 100%;
+  height: auto;
+  text-align: end;
+  margin: -.5rem .5rem 0 0;
+}
+.date span{
+  background-color: gray;
+  font-weight: 600;
+}
+
+span{
+  background-color: rgba(34, 34, 34, 0.397);
+  padding: .5rem;
+  border-radius: 20px;
+}
+
+.linkCard span{
+  margin: .5rem auto .5rem .1rem;
+}
+
+.card p{
+  padding: 1rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.linkCard{
+  width: 100%;
+  text-align: start;
+  margin: 1rem 0 1rem .5rem;
+}
+
+
+
+@media screen and (max-width: 870px) {
+  .container .card{
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .card p{
+    padding: 0 3rem 0 1rem;
+    text-align:left;
+  }
+}
+/*
+@media screen and (max-width: 1200px) {
   .card {
     width: 40%;
   }
-}
+  .container{
+    width: 100%;
+  }
 
+}
+/*
 @media screen and (max-width: 620px) {
   .container {
     width: 100%;
@@ -389,7 +428,7 @@ body{
     width: 80%;
   }
 }
-
+ */
 /*------------------------------Footer------------------------------------------------------------------*/
 
 /* Footer Section */

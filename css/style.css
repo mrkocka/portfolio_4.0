@@ -60,24 +60,17 @@ body{
     display: flex;
     flex-direction: column;
     background-color:rgba(0, 0, 0, 0.377);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/klavi_bg_optimized.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 830px;
     justify-content: center;
     align-items: center;
     color: #ffffffce ;
     z-index: 1;
 }
-#home::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: url(../img/klavi_bg_optimized.jpg) no-repeat center/cover;
-    height: 900px;
-    width: 100%;
-    z-index: -1;
-    opacity: .9;
 
-}
 .main{
     display: flex;
     flex-direction: column;
