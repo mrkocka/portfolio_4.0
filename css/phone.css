@@ -2,10 +2,13 @@
 
 /* Home */
 #home{
-    height: 820px;
+    height: 400px;
+    justify-content: flex-start;
+    z-index: 0;
 }
 .headings{
     font-size: 2rem;
+    margin-top: 10rem;
 }
 
 /* About */

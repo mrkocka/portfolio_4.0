@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Amatic SC', cursive;
-    /* text-decoration: none; */
+ 
 }
     
 
@@ -893,7 +893,6 @@ table.customTable {
     
 }
 .popup a {
-    
     font-family:'Open Sans Condensed', sans-serif;
     color: black;
 
@@ -916,45 +915,4 @@ justify-content: center;
 #close .fas{
     margin-right: .3rem;
 } 
-
-
-
-/*-------------------------------------------------------Blog Főoldal----------------------------------------------------------------------------------*/
-
-
-/*-----------csempe---------------------------------------------------------------------------*/
-#tiles{
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    background-color: rgba(0, 255, 255, 0.082);
-    width: 80%;
-    margin: 2rem auto 2rem auto;
-    padding: 1rem;
-}
-
-#tiles span{
-    width: 15rem;
-    height: 8rem;
-    background-color: coral;
-    text-align: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2rem;
-}
-#tiles a{
-    text-decoration: none;
-    color: white;
-}
-
-#tiles span:hover{
-        outline: 2px solid whitesmoke;
-        cursor: pointer;
-}
-
-/*------------------------Cikek---------------------------------------------------------------*/
 

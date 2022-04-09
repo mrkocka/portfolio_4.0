@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+ 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+   /*  display: flex;
+    flex-direction: column; */
+   
+}
+
+
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #eeeeff;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: #7f7caf83;
+    color: #1d1e18;
+    box-shadow: 0 0 10px #7f7caf83;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.377);
+    height: 830px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffce ;
+    z-index: 1;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/klavi_bg_optimized.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+
+}
+
+.headings{
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin:40px 0px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.219);
+    border: 1px solid white;
+    color: #eeeeff;
+    outline: none;
+    transition: .6s ease;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    
+}
+
+/*-------------------------------------------------------carusel-------------------------------*/
+
+  
+  #carusel{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 5rem;
+  }
+  
+  .slider{
+    position: relative;
+    background: #000116;
+    width: 800px;
+    min-height: 500px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+  }
+  
+  .slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+  }
+  
+  .slider .slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider .slide .info{
+    position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+  }
+  
+  .slider .slide .info h2{
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Amatic SC', cursive;
+  }
+  
+  .slider .slide .info p{
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .navigation{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider:hover .navigation{
+    opacity: 1;
+  }
+  
+  .prev-btn, .next-btn{
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-btn{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .next-btn{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .navigation-visibility{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-visibility .slide-icon{
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+  
+  .navigation-visibility .slide-icon.active{
+    background: #4285F4;
+  }
+  
+  @media (max-width: 900px){
+    .slider{
+      width: 100%;
+    }
+  
+    .slider .slide .info{
+      position: relative;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .slider .slide .info h2{
+      font-size: 1.8em;
+      line-height: 40px;
+    }
+  
+    .slider .slide .info p{
+      font-size: 0.9em;
+    }
+  }
+
+/*-----------csempe---------------------------------------------------------------------------*/
+#tiles{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+   /*  background-color: rgba(0, 255, 255, 0.082); */
+    width: 80%;
+    margin: 4rem auto 4rem auto;
+    padding: 1rem;
+}
+
+#tiles span{
+    width: 15rem;
+    height: 8rem;
+    background-color: coral;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+
+#tiles a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+
+#tiles span:hover{
+        outline: 2px solid whitesmoke;
+        cursor: pointer;
+}
+
+/*----------------------------------Articles-----------------------------------*/
+
+#articles{
+  color: black;
+  
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+  margin-bottom: 20rem;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.row a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-header {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  border-radius: 20px;
+ 
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family:'Open Sans Condensed', sans-serif;
+  
+}
+
+.card-body .btn {
+  display: block;
+  background-color: black;
+  padding: 10px 35px;
+  width: 10rem;
+  color: #eeeeff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.2rem; 
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.card-body .btn:hover {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: black;
+}
+
+.card-body a{
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+/*------------------------------Footer------------------------------------------------------------------*/
+
+/* Footer Section */
+
+
+footer{
+  background-color:rgba(245, 245, 245, 0.158);
+  color: whitesmoke;
+}
+footer a {
+  text-decoration: none;
+}
+#footerBox{
+  display: flex;
+  justify-content: space-between;
+  height:auto;
+
+}
+/*---------------------Logo-----------------------------------*/
+.logoBox{
+  height: 168px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding-left:4vh ;
+  
+}
+
+.logoBox img{
+  width: 10vh;
+  margin-top: 15px;
+}
+
+/*-------------------Social Icon@tell,email--------------------*/
+.socialBox{
+  height: 168px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+.socialIcon{
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialIcon .fa{
+  font-size: 2.6rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.socialIcon .fa:hover{
+  color: red;
+}
+.tel a{
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+}
+.tel a:hover{
+  color: red;
+}
+.tel .fas{
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
+.email a{
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+.email a:hover{
+  color: red;
+}
+.email .fas{
+  font-size: 1.5rem;
+  margin-right: .3rem;
+}
+
+
+
+/*----------------------TextBox---------------------------------*/
+.textBox{
+  height: 168px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  padding-top: 6rem;
+
+}
+.textBox a{
+  color: whitesmoke;
+  font-size: 1.2rem;
+  padding-bottom: .8rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+.textBox a:hover{
+  color: red;
+}
+
+
+
+/*---------------------Copy------------------------------------*/
+#cpoyArea{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  letter-spacing: .7rem;
+  font-family: 'Amatic SC', cursive;
+}
+/*------------------------Verzio-------------------------------*/
+.verzio{
+  text-align: center;
+  margin-top: 1rem;
+  letter-spacing: .1rem;
+  font-family: 'Amatic SC', cursive;
+}
